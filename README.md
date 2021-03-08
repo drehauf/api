@@ -65,6 +65,8 @@ $ npm run test:cov
 
 ## Data Model
 
+![data model](./doc/erm.jpg)
+
 The entity-relationship model is encoded in the file `erm.drawio`. To view and edit it, follow these steps:
 
 1. Go to [DrawIO](https://app.diagrams.net/) and log in with Github

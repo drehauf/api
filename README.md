@@ -30,12 +30,21 @@ $ npm run start:prod
 ```
 
 ### Development Secrets
+
+We use [docs](https://www.npmjs.com/package/dotenv) to keep secrets.
+
 > ⚠️ The `.env` file containing the secrets is included in `.gitignore` and will not be tracked
 
-You need to add the file and the following secrets yourself:
-- `TOP_SECRET`: does nothing yet
-
-See [docs](https://www.npmjs.com/package/dotenv) or more information 
+You need to add the file to root and the following secrets yourself:
+- `TYPEORM_CONNECTION`: type of database to use
+- `TYPEORM_HOST`: database host adress
+- `TYPEORM_PORT`: database port
+- `TYPEORM_USERNAME`: username with database access rights
+- `TYPEORM_PASSWORD`: password for username
+- `TYPEORM_DATABASE`: database name
+- `TYPEORM_SYNCHRONIZE`: enable synchronization of entites every time the app is run
+- `TYPEORM_LOGGING`: enable logging
+- `TYPEORM_ENTITIES`: the entity file locations
 
 ## Test
 

@@ -2,13 +2,14 @@
 
 ## Description
 
-GraphQL endpoint for drehauf.
+Dreh Auf CMS GraphQL endpoint.
 
 ## Table Of Contents
 - [Installation](#installation)
-- [Running the app](#running-the-app)
+- [Running The App](#running-the-app)
     - [Development Secrets](#development-secrets)
-- [Test](#test)
+    - [Testing](#testing)
+- [Data Model](#data-model)
 
 ## Installation
 
@@ -16,7 +17,7 @@ GraphQL endpoint for drehauf.
 $ npm install
 ```
 
-## Running the app
+## Running The App
 
 ```bash
 # development
@@ -31,7 +32,7 @@ $ npm run start:prod
 
 ### Development Secrets
 
-We use [docs](https://www.npmjs.com/package/dotenv) to keep secrets.
+We use [dotenv](https://www.npmjs.com/package/dotenv) to keep secrets.
 
 > ⚠️ The `.env` file containing the secrets is included in `.gitignore` and will not be tracked
 
@@ -46,7 +47,7 @@ You need to add the file to root and the following secrets yourself:
 - `TYPEORM_LOGGING`: enable logging
 - `TYPEORM_ENTITIES`: the entity file locations
 
-## Test
+### Testing
 
 ```bash
 # unit tests
@@ -61,3 +62,16 @@ $ npm run test:e2e
 # test coverage
 $ npm run test:cov
 ```
+
+## Data Model
+
+<details><summary>Show file preview</summary>
+    <img src="./doc/erm.jpg" alt="data model screenshot">
+</details>
+<br>
+
+The entity-relationship model is encoded in the file `erm.drawio`. To view and edit it, follow these steps:
+
+1. Go to [DrawIO](https://app.diagrams.net/) and log in with Github
+3. Click `File` → `Open from` → `GitHub...`
+4. Choose `drehauf/api` → `erm.drawio`
